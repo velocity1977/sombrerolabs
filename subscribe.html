@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tune In — Sombrero Dispatches</title>
+    <meta name="description" content="Get occasional dispatches and acoustic notes when the Sombrero chords begin.">
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-HFRQFZ4Q9C"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-HFRQFZ4Q9C');
+    </script>
+
+    <!-- Typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600;700&family=Playfair+Display:ital,wght@0,600;1,400;1,600;1,700;1,800&family=Montserrat:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap"
+        rel="stylesheet">
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            margin: 0;
+            padding: 2rem 1.5rem;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color: #000000;
+            color: #d1f8f9;
+            font-family: 'Montserrat', sans-serif;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        ::selection {
+            background: #7ce7e6;
+            color: #000000;
+        }
+
+        a {
+            color: #7ce7e6;
+            text-decoration: none;
+            transition: all 0.2s ease;
+        }
+
+        a:hover {
+            color: #a8f0ef;
+        }
+
+        .container {
+            max-width: 640px;
+            width: 100%;
+            padding: 3.5rem 3.5rem 3rem;
+            background-color: #000000;
+            border-radius: 20px;
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+            border: 1px solid rgba(124, 231, 230, 0.1);
+            position: relative;
+            text-align: center;
+        }
+
+        /* Minimal Top Nav */
+        .nav-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 3rem;
+            font-size: 0.8rem;
+            color: #557274;
+            font-family: 'JetBrains Mono', monospace;
+        }
+
+        .nav-header a {
+            color: #6b8f91;
+        }
+
+        .nav-header a:hover {
+            color: #7ce7e6;
+        }
+
+        /* Tape label & Headers */
+        .tape-label {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.72rem;
+            color: #7ce7e6;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-bottom: 0.75rem;
+            opacity: 0.85;
+        }
+
+        h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(2rem, 4.5vw, 2.7rem);
+            font-style: italic;
+            font-weight: 700;
+            color: #ffffff;
+            line-height: 1.2;
+            margin-bottom: 0.4rem;
+            letter-spacing: 0.5px;
+        }
+
+        .subtitle {
+            font-family: 'Caveat', cursive;
+            font-size: 1.55rem;
+            color: #7ce7e6;
+            margin-bottom: 3rem;
+            opacity: 0.9;
+        }
+
+        /* Minimal Horizontal Form */
+        .form-wrap {
+            margin: 2.5rem auto 1.5rem;
+            max-width: 480px;
+        }
+
+        .subscribe-form {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .email-input {
+            background: transparent;
+            border: none;
+            border-bottom: 1.5px solid rgba(124, 231, 230, 0.45);
+            color: #ffffff;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 0.98rem;
+            padding: 6px 8px;
+            width: 250px;
+            outline: none;
+            transition: all 0.25s ease;
+        }
+
+        .email-input::placeholder {
+            color: rgba(209, 248, 249, 0.35);
+        }
+
+        .email-input:focus {
+            border-bottom-color: #7ce7e6;
+            box-shadow: 0 1px 0 #7ce7e6;
+        }
+
+        .submit-btn {
+            background: transparent;
+            border: 1.5px solid #7ce7e6;
+            color: #7ce7e6;
+            border-radius: 6px;
+            padding: 6px 24px;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 0.95rem;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.25s ease;
+            white-space: nowrap;
+        }
+
+        .submit-btn:hover {
+            color: #a8f0ef;
+            border-color: #a8f0ef;
+            background: rgba(124, 231, 230, 0.08);
+            box-shadow: 0 0 14px rgba(124, 231, 230, 0.3);
+            transform: translateY(-1px);
+        }
+
+        .submit-btn:active {
+            transform: translateY(0);
+        }
+
+        .submit-btn:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+
+        .form-meta {
+            margin-top: 1.2rem;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.68rem;
+            color: #557274;
+            letter-spacing: 0.5px;
+        }
+
+        .form-feedback {
+            margin-top: 1rem;
+            min-height: 1.2rem;
+            text-align: center;
+            color: #7ce7e6;
+            font-family: 'Caveat', cursive;
+            font-size: 1.45rem;
+            letter-spacing: 0.5px;
+            transition: all 0.3s ease;
+        }
+
+        /* Curvy Script Footnote */
+        .curvy-link-wrap {
+            margin-top: 3.5rem;
+            text-align: center;
+            font-family: 'Caveat', cursive;
+            font-size: 1.5rem;
+            color: #7ce7e6;
+            opacity: 0.85;
+        }
+
+        .curvy-link {
+            font-family: 'Caveat', cursive;
+            font-size: 1.5rem;
+            color: #7ce7e6;
+            text-decoration: underline;
+            text-underline-offset: 4px;
+            text-decoration-color: rgba(124, 231, 230, 0.4);
+            display: inline-block;
+            transition: all 0.3s ease;
+        }
+
+        .curvy-link:hover {
+            color: #a8f0ef;
+            text-decoration-color: #a8f0ef;
+            transform: scale(1.05);
+            text-shadow: 0 0 14px rgba(124, 231, 230, 0.5);
+        }
+
+        @media (max-width: 650px) {
+            .container {
+                padding: 2.2rem 1.5rem;
+            }
+
+            .subscribe-form {
+                flex-direction: column;
+                gap: 14px;
+                width: 100%;
+            }
+
+            .email-input {
+                width: 100%;
+                max-width: 280px;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <!-- Minimal Top Nav -->
+        <nav class="nav-header">
+            <a href="index.html">← sombrero origin</a>
+            <a href="liner-notes.html">liner notes</a>
+            <a href="markdown-converter.html">small riff</a>
+        </nav>
+
+        <!-- Tape Header -->
+        <div class="tape-label">[ DISPATCH LOG // OCCASIONAL NOTES • ZERO NOISE ]</div>
+        <h1>Hear the chords first.</h1>
+        <div class="subtitle">a quiet acoustic dispatch from the green room...</div>
+
+        <!-- Subscribe Form -->
+        <div class="form-wrap">
+            <form 
+                action="https://buttondown.com/api/emails/embed-subscribe/vivaonline555" 
+                method="post" 
+                target="_blank" 
+                class="subscribe-form" 
+                id="subscribeForm"
+            >
+                <input type="hidden" name="tag" value="sombrero-sub-page">
+                <input 
+                    type="email" 
+                    name="email" 
+                    id="emailInput" 
+                    class="email-input" 
+                    placeholder="you@example.com" 
+                    required 
+                    autocomplete="email"
+                    aria-label="Your email address"
+                >
+                <button type="submit" class="submit-btn" id="submitBtn">
+                    <span class="btn-text">Tune In</span>
+                </button>
+            </form>
+
+            <div class="form-meta">
+                [ POWERED BY BUTTONDOWN // ONE-CLICK UNSUBSCRIBE ANYTIME ]
+            </div>
+
+            <div class="form-feedback" id="formFeedback" role="status" aria-live="polite"></div>
+        </div>
+
+        <!-- Curvy Footnote Links -->
+        <div class="curvy-link-wrap">
+            while you wait... catch a <a href="markdown-converter.html" class="curvy-link">small riff</a> or read the <a href="liner-notes.html" class="curvy-link">liner notes</a>...
+        </div>
+    </div>
+
+    <script>
+        (function () {
+            const form = document.getElementById('subscribeForm');
+            if (!form) return;
+            const emailInput = document.getElementById('emailInput');
+            const submitBtn = document.getElementById('submitBtn');
+            const btnText = submitBtn.querySelector('.btn-text');
+            const feedback = document.getElementById('formFeedback');
+
+            form.addEventListener('submit', async function (e) {
+                e.preventDefault();
+                const email = emailInput.value.trim();
+                if (!email) return;
+
+                submitBtn.disabled = true;
+                btnText.textContent = 'Tuning in...';
+                feedback.textContent = '';
+
+                const formData = new FormData(form);
+
+                try {
+                    await fetch('https://buttondown.com/api/emails/embed-subscribe/vivaonline555', {
+                        method: 'POST',
+                        body: formData,
+                        mode: 'no-cors'
+                    });
+
+                    feedback.innerHTML = 'You&rsquo;re on the guest list. Check your inbox to confirm.';
+                    emailInput.value = '';
+                    emailInput.disabled = true;
+                    submitBtn.style.display = 'none';
+                } catch (err) {
+                    console.error('Subscription error:', err);
+                    form.submit();
+                } finally {
+                    submitBtn.disabled = false;
+                    btnText.textContent = 'Tune In';
+                }
+            });
+        })();
+    </script>
+</body>
+
+</html>
