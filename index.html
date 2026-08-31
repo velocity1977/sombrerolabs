@@ -1,0 +1,150 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The music starts soon...</title>
+    
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-HFRQFZ4Q9C"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-HFRQFZ4Q9C');
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600&family=Playfair+Display:ital,wght@1,700;1,800&family=Montserrat:wght@400;500&display=swap"
+        rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 2rem;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color: #000000;
+            color: #d1f8f9;
+            font-family: 'Montserrat', sans-serif;
+            box-sizing: border-box;
+        }
+
+        .container {
+            max-width: 800px;
+            padding: 4rem;
+            background-color: #000000;
+            border-radius: 20px;
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+            border: none;
+        }
+
+        .image-container {
+            margin-bottom: 3rem;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+        }
+
+        p {
+            font-size: 0.85rem;
+            line-height: 1.3;
+            color: #b0d8da;
+            margin: 0 0 1.5rem 0;
+            text-align: justify;
+        }
+
+        .teaser {
+            font-family: 'Playfair Display', serif;
+            font-style: italic;
+            font-size: 1.3rem;
+            letter-spacing: 2px;
+            color: #7ce7e6;
+            margin: 0.5rem 0;
+            font-weight: 700;
+            text-align: center;
+        }
+
+        .pulsing {
+            animation: pulse 4s infinite ease-in-out;
+        }
+
+        @keyframes pulse {
+            0% {
+                opacity: 0.6;
+            }
+
+            50% {
+                opacity: 1;
+            }
+
+            100% {
+                opacity: 0.6;
+            }
+        }
+
+        /* Subtle Curvy Footnote Link */
+        .curvy-link-wrap {
+            margin-top: 3.5rem;
+            text-align: center;
+        }
+
+        .curvy-link {
+            font-family: 'Caveat', cursive;
+            font-size: 1.55rem;
+            color: #7ce7e6;
+            text-decoration: none;
+            letter-spacing: 1px;
+            opacity: 0.7;
+            transition: all 0.3s ease;
+            display: inline-block;
+        }
+
+        .curvy-link:hover {
+            color: #a8f0ef;
+            opacity: 1;
+            transform: scale(1.04);
+            text-shadow: 0 0 14px rgba(124, 231, 230, 0.45);
+        }
+
+        @media (max-width: 650px) {
+            .container {
+                padding: 2rem 1.5rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="image-container">
+            <img src="Sombrero.jpg" alt="A classic Sombrero">
+        </div>
+        <p>Legend has it that during a fierce rainstorm in 1912, three complete strangers took shelter under a single,
+            aggressively oversized sombrero. They didn't know each other beforehand, but by the time the rain stopped 40
+            minutes later, they had bonded so intensely they had no choice but to form a Mariachi band.</p>
+        <p class="teaser">The storm is clearing, Guitars are tuned.</p>
+        <p class="teaser pulsing" style="font-size: 1.6rem; letter-spacing: 6px; color:#a8f0ef;">The chords are about to
+            begin... </p>
+
+        <!-- Subtle Curvy Script Link -->
+        <div class="curvy-link-wrap">
+            <a href="markdown-converter.html" class="curvy-link">while you wait... a small riff for you...</a>
+        </div>
+    </div>
+</body>
+
+</html>
+
+
