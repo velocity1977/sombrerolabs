@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Liner Notes — Sombrero</title>
+  <meta name="description" content="Liner notes, acoustic observations, and architectural essays from inside the Sombrero album sleeve.">
+  
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-HFRQFZ4Q9C"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-HFRQFZ4Q9C');
+  </script>
+
+  <!-- Typography matching index.html -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600;700&family=Playfair+Display:ital,wght@0,600;1,400;1,600;1,700;1,800&family=Montserrat:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: #000000;
+      color: #d1f8f9;
+      font-family: 'Montserrat', sans-serif;
+      line-height: 1.85;
+      min-height: 100vh;
+      padding: 3rem 1.5rem 5rem;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    ::selection {
+      background: #7ce7e6;
+      color: #000000;
+    }
+
+    a {
+      color: #7ce7e6;
+      text-decoration: none;
+      transition: all 0.2s ease;
+    }
+
+    a:hover {
+      color: #a8f0ef;
+    }
+
+    .container {
+      max-width: 680px;
+      margin: 0 auto;
+    }
+
+    /* Minimal Top Navigation */
+    .nav-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 4rem;
+      font-size: 0.82rem;
+      color: #557274;
+      font-family: 'JetBrains Mono', monospace;
+    }
+
+    .nav-header a {
+      color: #6b8f91;
+    }
+
+    .nav-header a:hover {
+      color: #7ce7e6;
+    }
+
+    /* Masthead */
+    .masthead {
+      margin-bottom: 4.5rem;
+      border-bottom: 1px solid rgba(124, 231, 230, 0.12);
+      padding-bottom: 2rem;
+      position: relative;
+    }
+
+    .masthead-badge {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.7rem;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: #6b8f91;
+      margin-bottom: 0.75rem;
+    }
+
+    .masthead h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(2.3rem, 5vw, 3.2rem);
+      font-style: italic;
+      font-weight: 700;
+      letter-spacing: 1px;
+      color: #ffffff;
+      margin-bottom: 0.4rem;
+      line-height: 1.15;
+    }
+
+    .masthead-sub {
+      font-family: 'Caveat', cursive;
+      font-size: 1.6rem;
+      color: #7ce7e6;
+      opacity: 0.85;
+      letter-spacing: 0.5px;
+    }
+
+    .side-section-label {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.74rem;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: #7ce7e6;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 2.2rem;
+      opacity: 0.85;
+    }
+
+    .side-section-label::after {
+      content: "";
+      flex: 1;
+      height: 1px;
+      background: rgba(124, 231, 230, 0.15);
+    }
+
+    /* Journal Entries */
+    .entry {
+      margin-bottom: 5rem;
+      position: relative;
+    }
+
+    .entry-tape-label {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.72rem;
+      color: #7ce7e6;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      margin-bottom: 0.6rem;
+      opacity: 0.75;
+    }
+
+    .entry-title {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.65rem;
+      font-weight: 600;
+      color: #ffffff;
+      line-height: 1.3;
+      margin-bottom: 1.5rem;
+      letter-spacing: 0.2px;
+    }
+
+    .entry p {
+      font-size: 0.94rem;
+      color: #b0d8da;
+      line-height: 1.9;
+      margin-bottom: 1.5rem;
+      text-align: justify;
+      font-weight: 400;
+    }
+
+    /* Vintage Drop Cap on First Paragraph */
+    .entry p.lead::first-letter {
+      font-family: 'Playfair Display', serif;
+      font-size: 3.4rem;
+      float: left;
+      line-height: 0.8;
+      margin-right: 0.65rem;
+      margin-top: 0.35rem;
+      color: #7ce7e6;
+      font-style: italic;
+      font-weight: 700;
+      text-shadow: 0 0 16px rgba(124, 231, 230, 0.35);
+    }
+
+    .entry blockquote {
+      border-left: 2px solid #7ce7e6;
+      padding-left: 1.4rem;
+      margin: 2.2rem 0;
+      font-family: 'Playfair Display', serif;
+      font-style: italic;
+      font-size: 1.15rem;
+      color: #a8f0ef;
+      line-height: 1.6;
+    }
+
+    .entry .marginalia {
+      font-family: 'Caveat', cursive;
+      font-size: 1.5rem;
+      color: #7ce7e6;
+      margin-top: 1.25rem;
+      opacity: 0.85;
+      display: block;
+      text-align: right;
+      transform: rotate(-1.5deg);
+      transform-origin: right center;
+    }
+
+    .entry .marginalia a {
+      color: #7ce7e6;
+      text-decoration: underline;
+      text-underline-offset: 4px;
+      text-decoration-color: rgba(124, 231, 230, 0.4);
+    }
+
+    .entry .marginalia a:hover {
+      color: #a8f0ef;
+      text-decoration-color: #a8f0ef;
+      text-shadow: 0 0 12px rgba(124, 231, 230, 0.4);
+    }
+
+    /* Entry Divider */
+    .divider {
+      text-align: center;
+      margin: 4.5rem 0;
+      color: rgba(124, 231, 230, 0.2);
+      font-family: 'Playfair Display', serif;
+      letter-spacing: 12px;
+      font-size: 0.9rem;
+    }
+
+    /* Footer */
+    .footnote {
+      margin-top: 5rem;
+      padding-top: 2.5rem;
+      border-top: 1px solid rgba(124, 231, 230, 0.12);
+      text-align: center;
+    }
+
+    .footnote-text {
+      font-family: 'Caveat', cursive;
+      font-size: 1.6rem;
+      color: #7ce7e6;
+      opacity: 0.85;
+      margin-bottom: 1.2rem;
+    }
+
+    .footnote-text a {
+      text-decoration: underline;
+      text-underline-offset: 4px;
+      text-decoration-color: rgba(124, 231, 230, 0.4);
+    }
+
+    .footnote-text a:hover {
+      text-decoration-color: #a8f0ef;
+      text-shadow: 0 0 12px rgba(124, 231, 230, 0.4);
+    }
+
+    .footnote-sub {
+      font-size: 0.72rem;
+      color: #3b5052;
+      font-family: 'JetBrains Mono', monospace;
+    }
+
+    @media (max-width: 650px) {
+      body {
+        padding: 2rem 1.25rem 3.5rem;
+      }
+      .entry p {
+        text-align: left;
+        hyphens: none;
+      }
+      .entry p.lead::first-letter {
+        font-size: 2.6rem;
+        margin-right: 0.45rem;
+        margin-top: 0.2rem;
+        line-height: 0.85;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+
+    <!-- Subtle Top Navigation -->
+    <nav class="nav-header">
+      <a href="index.html">← sombrero origin</a>
+      <a href="markdown-converter.html">the green room workbench 🎸</a>
+    </nav>
+
+    <!-- Masthead -->
+    <header class="masthead">
+      <div class="masthead-badge">SOMBRERO ARCHIVES // TAPE REEL 01</div>
+      <h1>Liner Notes</h1>
+      <div class="masthead-sub">things written down while the storm clears...</div>
+    </header>
+
+    <!-- SIDE A: The Hat & The Band -->
+    <div class="side-section-label">
+      SIDE A // The Hat &amp; The Band
+    </div>
+
+    <!-- Entry 01 (Side A) -->
+    <article class="entry">
+      <div class="entry-tape-label">[ SIDE A // Track 01 • 1912deluge.log • 1 AUG 2026 ]</div>
+      <h2 class="entry-title">The Hat, the Band, and a Tool Nobody Asked For</h2>
+      
+      <p class="lead">
+        1912. A storm. Three strangers under one absurdly large sombrero. Forty minutes later, a mariachi band.
+      </p>
+
+      <p>
+        We didn't need forty minutes. A friend knew a guy. Coffee at Starbucks. We walked out with a concept and no idea it was a band yet.
+      </p>
+
+      <p>
+        That's the whole origin story. We're not going to dress it up more than that.
+      </p>
+
+      <p>
+        Here's what we keep thinking about. A song either gets hummed on a porch and travels on its own, or it sits behind a hundred-dollar ticket for people who were already coming. Same chords. Different reach. The music doesn't decide that. The door does.
+      </p>
+
+      <p>
+        Most tech has the shape of the expensive show. Impressive to the five people already fluent in it. Everyone else stands outside the venue.
+      </p>
+
+      <p>
+        We'd rather build the porch song. Something a business can pick up and actually use — no research team required, no translator standing between the tool and the person who needs it.
+      </p>
+
+      <p>
+        That's the idea. We're still tuning it.
+      </p>
+
+      <p>
+        Somewhere in working on it, a small tool fell out. Nobody asked for it. It's not the record — just a chord we played to check the strings were in tune. Down the hall, in the green room.
+      </p>
+
+      <div class="marginalia">
+        ~ <a href="markdown-converter.html">go look.</a>
+      </div>
+    </article>
+
+    <div class="divider">✦ &nbsp; ✦ &nbsp; ✦</div>
+
+    <!-- SIDE B: Green Room Riffs & Tools -->
+    <div class="side-section-label">
+      SIDE B // Green Room Riffs &amp; Tools
+    </div>
+
+    <!-- Entry 02 (Side B) -->
+    <article class="entry">
+      <div class="entry-tape-label">[ SIDE B // Track 01 • greenroom_tape_04.log • 31 AUG 2026 ]</div>
+      <h2 class="entry-title">A Riff, Played Once, Recorded Anyway</h2>
+
+      <p class="lead">
+        Documents don't talk to LLMs well. PDFs come out mangled. Word docs lose their shape. Someone always ends up copy-pasting into a chat window and hoping for the best.
+      </p>
+
+      <p>
+        So — a converter. PDFs, Word, PowerPoint, Excel, straight into clean Markdown. Runs on your machine, not ours. No upload, no account, no cloud round-trip. What goes in your folder stays in your folder.
+      </p>
+
+      <p>
+        It pulls figures out into their own asset folder instead of losing them. It fixes the broken math symbols PDFs love to mangle. It handles a locked file if you hand it the password. None of this took a company to build. It took a weekend and a reason to want it.
+      </p>
+
+      <p>
+        It's free. It's open source, AGPL, code's on GitHub if you want to see how it works or make it work better. Windows only, for now.
+      </p>
+
+      <p>
+        This isn't the record. It's a riff we worked out in the green room, in the time it took the real thing to tune up. If it's useful, take it.
+      </p>
+
+      <div class="marginalia">
+        ~ <a href="markdown-converter.html">take it, it's yours.</a>
+      </div>
+    </article>
+
+    <!-- Quiet Footnote -->
+    <footer class="footnote">
+      <div class="footnote-text">
+        still waiting for the chords? try the <a href="markdown-converter.html">small riff 🎸</a>
+      </div>
+      <div class="footnote-sub">
+        © 1912 – 2026 Sombrero Labs • All chords acoustic
+      </div>
+    </footer>
+
+  </div>
+</body>
+</html>
